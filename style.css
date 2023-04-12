@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+:root{
+    --Cyan-1: hsl(179, 49%, 48%);
+    --Cyan-2: hsl(179, 37%, 56%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+    --karla: "Karla";
+}
+
+body{
+    height: 150vh;
+    background-color: var(--Light-Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    width: 85vw; 
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.123);
+
+}
+
+.card__content{
+    
+    
+   
+    font-size: 15px;
+    font-family: var(--karla);
+    
+}
+
+.card--cor-1 h2, .card--cor-1 p{
+    margin-bottom: 1.5rem;
+}
+.card--cor-1 h2{
+    color: var(--Cyan-1);
+}
+.color--text{
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+}
+.card--line{
+    line-height: 1.4rem;
+}
+
+.padding--inter{
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+.card--cor-1{
+    background-color: white;
+    color: var(--Grayish-Blue);
+}
+
+.card--cor-2{
+    background-color: var(--Cyan-1);
+    color: white;
+}
+
+.card--cor-3{
+    background-color: var(--Cyan-2);
+    color: white;
+}
+
+h2{
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+
+.card__price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+.card__price p{
+    font-size: 30px;
+    margin-right: 0.5rem;
+    font-weight: 700;
+
+}
+
+button{
+    width: 100%;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    border: none;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    font-weight: 700;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.075);
+    border-radius: 4px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: hsl(71, 56%, 60%) ;
+}
+
+.card--cor-3{
+    line-height: 1.4rem;
+    
+}
+
+.card--cor-3 h2{
+    margin-bottom: 1rem;
+
+}
+
+@media screen and (min-width:768px) {
+    section{
+        display: flex;
+
+    }
+
+    .card--cor-2, .card--cor-3{
+        width: 50%;
+    }
+
+    .padding--inter{
+        padding: 2rem;
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+    .card{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .card{
+        width: 50%;
+    }
+
+}
